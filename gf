@@ -14,7 +14,7 @@
 # body as ANSI. A BOM or any non-ASCII byte would break `irm | iex`.
 #
 # Parameters:
-#   -Version     'latest' (default) or a tag such as v2.0.0 / 2.0.0
+#   -Version     'latest' (default) or an exact release tag such as 2.1.0.0
 #   -InstallDir  where GhostFrame.exe goes (default %LOCALAPPDATA%\GhostFrame\bin)
 #   -BaseUrl     override the release base URL (forks and tests)
 #   -NoRun       install but do not start it
@@ -53,7 +53,7 @@ function Get-AssetUrl {
     }
 
     $tag = $Version
-    if (-not $tag.StartsWith('v')) {
+    if ($tag -notmatch '^v?\d') {
         $tag = "v$tag"
     }
     return "$BaseUrl/download/$tag/$Asset"
