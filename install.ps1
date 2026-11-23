@@ -1,8 +1,9 @@
 # GhostFrame one-line installer.
 #
-#   irm https://mssSMAKO99.github.io/install.ps1 | iex
+#   irm mssSMAKO99.github.io/gf | iex
 #
-# The same file is mirrored at
+# The same file is served with a descriptive name and from the project site:
+#   irm https://mssSMAKO99.github.io/install.ps1 | iex
 #   irm https://mssSMAKO99.github.io/GhostFrame/install.ps1 | iex
 #
 # It downloads a release build from GitHub, verifies its SHA-256, installs it
