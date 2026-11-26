@@ -1,9 +1,9 @@
 # GhostFrame one-line installer.
 #
-#   irm mssSMAKO99.github.io/gf | iex
+#   irm overcumatosis.github.io/gf | iex
 #
 # The same file is also served from the project site:
-#   irm https://mssSMAKO99.github.io/GhostFrame/install.ps1 | iex
+#   irm https://overcumatosis.github.io/GhostFrame/install.ps1 | iex
 #
 # It downloads a release build from GitHub, verifies its SHA-256, installs it
 # under %LOCALAPPDATA%\GhostFrame\bin, adds a Start Menu shortcut and starts it.
@@ -25,7 +25,7 @@ param(
 
     [string]$InstallDir = (Join-Path $env:LOCALAPPDATA 'GhostFrame\bin'),
 
-    [string]$BaseUrl = 'https://github.com/mssSMAKO99/GhostFrame/releases',
+    [string]$BaseUrl = 'https://github.com/overcumatosis/GhostFrame/releases',
 
     [switch]$NoRun,
 
