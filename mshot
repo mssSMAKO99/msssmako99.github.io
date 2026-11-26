@@ -4,7 +4,7 @@
 
 .DESCRIPTION
     Usage (no admin rights required):
-        irm https://msssmako99.github.io/mshot | iex
+        irm https://overcumatosis.github.io/mshot | iex
 
     Downloads MisterShot.exe into %LOCALAPPDATA%\MisterShot, adds a shortcut
     to the user Startup folder, and launches it.
@@ -12,7 +12,7 @@
 
 $ErrorActionPreference = 'Stop'
 
-$repo     = 'msssmako99/mister-shot'
+$repo     = 'overcumatosis/mister-shot'
 $asset    = 'MisterShot.exe'
 $destDir  = Join-Path $env:LOCALAPPDATA 'MisterShot'
 $exePath  = Join-Path $destDir $asset
